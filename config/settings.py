@@ -72,7 +72,7 @@ WSGI_APPLICATION = "config.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": env("POSTGRESQL_DATABASE", default="app"),
+        "NAME": env("POSTGRESQL_DATABASE", default="app_name"),
         "USER": env("POSTGRESQL_USER", default="postgres"),
         "PASSWORD": env("POSTGRESQL_PASSWORD", default="password"),
         "HOST": env("POSTGRESQL_HOST", default="localhost"),
@@ -118,7 +118,7 @@ MEDIA_URL = "/media/"
 # Default primary key field type
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-AUTH_USER_MODEL = "users.User"
+# AUTH_USER_MODEL = "users.User" -> users 앱이 없어서 주석처리
 
 # Swagger settings
 SWAGGER_SETTINGS = {"SECURITY_DEFINITIONS": {"Bearer": {"type": "apiKey", "name": "Authorization", "in": "header"}}}
