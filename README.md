@@ -5,7 +5,7 @@
 | 사전에 Postgresql을 Docker로 띄워주셔야 합니다 :)
 
 1. app_name은 서비스 이름으로 변경
-2. app_name로 적혀있는 것들 서비스 이름으로 변경
+2. app_name로 적혀있는 것들 서비스 이름으로 변경 (아래는 app_name으로 기본값으로 적힌 파일)
 ```
 CI.yml
 pyproject.toml
