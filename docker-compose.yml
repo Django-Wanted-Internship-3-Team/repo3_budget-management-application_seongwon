@@ -12,7 +12,7 @@ services:
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=password
-      - POSTGRES_DB=app_name
+      - POSTGRES_DB=repo_3
       - TZ=Asia/Seoul
     restart: on-failure
 

@@ -23,8 +23,7 @@ THIRD_PARTY_APPS = [
     "drf_yasg",
 ]
 
-LOCAL_APPS = [
-]
+LOCAL_APPS = []
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -72,7 +71,7 @@ WSGI_APPLICATION = "config.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": env("POSTGRESQL_DATABASE", default="app_name"),
+        "NAME": env("POSTGRESQL_DATABASE", default="repo_3"),
         "USER": env("POSTGRESQL_USER", default="postgres"),
         "PASSWORD": env("POSTGRESQL_PASSWORD", default="password"),
         "HOST": env("POSTGRESQL_HOST", default="localhost"),

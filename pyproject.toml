@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "app_name"
+name = "budget_management"
 version = "0.1.0"
 description = ""
 authors = [""]

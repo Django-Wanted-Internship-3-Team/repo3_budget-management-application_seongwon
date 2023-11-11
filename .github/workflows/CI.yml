@@ -15,13 +15,13 @@ jobs:
         run: docker compose up -d --build
 
       - name: Run mypy
-        run: docker compose run django poetry run mypy --config mypy.ini app_name/
+        run: docker compose run django poetry run mypy --config mypy.ini budget_management/
 
       - name: Run isort
-        run: docker compose run django poetry run isort app_name/ --check
+        run: docker compose run django poetry run isort budget_management/ --check
 
       - name: Run black
-        run: docker compose run django poetry run black app_name/ --check
+        run: docker compose run django poetry run black budget_management/ --check
 
       - name: Run flake8
         run: docker compose run django poetry run flake8
