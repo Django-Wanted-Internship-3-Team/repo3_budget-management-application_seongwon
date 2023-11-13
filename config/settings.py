@@ -26,6 +26,7 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     "budget_management.users",
+    "budget_management.categories",
 ]
 
 INSTALLED_APPS = [

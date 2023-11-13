@@ -22,6 +22,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     # API
     path("api/users/", include("budget_management.users.urls")),
+    path("api/categories/", include("budget_management.categories.urls")),
     # Swagger
     path("swagger/docs/", schema_view.with_ui("swagger", cache_timeout=0), name="schema-swagger-ui"),
 ]
