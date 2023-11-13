@@ -8,10 +8,10 @@ from rest_framework import permissions
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="Django 스켈레톤 프로젝트",
+        title="budget management application",
         default_version="v1",
-        description="원티드 프리온보딩 코스 Django 스켈레톤 프로젝트",
-        contact=openapi.Contact(email=""),
+        description="원티드 프리온보딩 코스 개인 프로젝트",
+        contact=openapi.Contact(email="lfoyh6591@naver.com"),
     ),
     public=True,
     permission_classes=[permissions.AllowAny],
@@ -21,6 +21,7 @@ urlpatterns = [
     # Admin
     path("admin/", admin.site.urls),
     # API
+    path("api/users/", include("budget_management.users.urls")),
     # Swagger
     path("swagger/docs/", schema_view.with_ui("swagger", cache_timeout=0), name="schema-swagger-ui"),
 ]
